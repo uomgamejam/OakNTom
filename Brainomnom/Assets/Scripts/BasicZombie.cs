@@ -240,4 +240,36 @@ public class BasicZombie: MonoBehaviour {
 		}
 		return true;
 	} // ValidMove
+	
+	public void Turn()
+	{
+		switch (newDirection)
+		{
+		case globals.direction.Top:
+			GetComponent<OTAnimatingSprite>().rotation = 0;
+			break;
+		case globals.direction.Left:
+			GetComponent<OTAnimatingSprite>().rotation = 90;
+			break;
+		case globals.direction.Right:
+			GetComponent<OTAnimatingSprite>().rotation = 270;
+			break;
+		case globals.direction.Bottom:
+			GetComponent<OTAnimatingSprite>().rotation = 180;
+			break;
+		case globals.direction.TopLeft:
+			GetComponent<OTAnimatingSprite>().rotation = 45;
+			break;
+		case globals.direction.TopRight:
+			GetComponent<OTAnimatingSprite>().rotation = 315;
+			break;
+		case globals.direction.BottomLeft:
+			GetComponent<OTAnimatingSprite>().rotation = 135;
+			break;
+		case globals.direction.BottomRight:
+			GetComponent<OTAnimatingSprite>().rotation = 235;
+			break;
+		}
+		
+	} // Turn
 }

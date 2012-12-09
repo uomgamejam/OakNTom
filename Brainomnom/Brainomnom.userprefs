@@ -2,11 +2,11 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\BasicZombie.cs">
     <Files>
-      <File FileName="Assets\Scripts\BasicZombieAnims.cs" Line="24" Column="27" />
-      <File FileName="Assets\Scripts\BasicZombie.cs" Line="232" Column="4" />
-      <File FileName="Assets\Scripts\BasicHumanAnims.cs" Line="31" Column="40" />
-      <File FileName="Assets\Scripts\globals.cs" Line="24" Column="33" />
-      <File FileName="Assets\Scripts\BasicHuman.cs" Line="9" Column="3" />
+      <File FileName="Assets\Scripts\BasicZombie.cs" Line="273" Column="3" />
+      <File FileName="Assets\Scripts\BasicZombieAnims.cs" Line="14" Column="3" />
+      <File FileName="Assets\Scripts\BasicHumanAnims.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\globals.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\BasicHuman.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
