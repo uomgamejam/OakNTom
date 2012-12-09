@@ -4,6 +4,7 @@ using System.Collections;
 public class BasicZombie: MonoBehaviour {
 
 	public bool isMoving = false;
+	public bool isActive = false;
 	public enum actionType { None, Turn, Move, Attack }
 	public actionType action = actionType.None;
 	public globals.direction currentDirection = globals.direction.Top;
@@ -32,12 +33,24 @@ public class BasicZombie: MonoBehaviour {
 			// Check if mouseclick is within 3 by 3 grid surrounding this zombie's tile.
 			Rect tempRect = new Rect(left - globals.tileWidth, top + globals.tileHeight, globals.tileWidth * 3, globals.tileHeight * 3);
 			if (tempRect.Contains(Input.mousePosition))
-			{	
+			{
 				// Check if the centre tile is clicked.
 				tempRect = new Rect(left, top, globals.tileWidth, globals.tileHeight);
 				if	(tempRect.Contains(Input.mousePosition))
-				   	action = actionType.None;
-				else
+				{
+					action = actionType.None;
+					if (!isActive)
+					{
+						if (globals.activePerson != null)
+							if (globals.activePerson.GetComponent<BasicZombie>() != null)
+								globals.activePerson.GetComponent<BasicZombie>().isActive = false;
+							else if (globals.activePerson.GetComponent<BasicHuman>() != null)
+								globals.activePerson.GetComponent<BasicHuman>().isActive = false;
+						globals.activePerson = GetComponent<OTAnimatingSprite>();
+						isActive = true;
+					}
+				}
+				else if (isActive)
 				{	
 					tempRect = new Rect(left-globals.tileWidth, top + globals.tileHeight, globals.tileWidth, globals.tileHeight);
 					Rect tempRect1 = new Rect(left, top + globals.tileHeight, globals.tileWidth, globals.tileHeight);
@@ -122,7 +135,7 @@ public class BasicZombie: MonoBehaviour {
 		float width = globals.tileWidth;
 		float height = globals.tileHeight;
 		Vector3 vecPos;
-		switch (newDirection)
+		switch (currentDirection)
 		{
 		case globals.direction.Left:
 			vecPos = new Vector3(transform.position.x - width, transform.position.y, transform.position.z);
@@ -163,4 +176,68 @@ public class BasicZombie: MonoBehaviour {
 			break;
 		}
 	} // Move
+	
+	public bool ValidMove(globals.direction direction)
+	{
+		float width = globals.tileWidth;
+		float height = globals.tileHeight;
+		Vector3 vecPos;
+		switch (direction)
+		{
+		case globals.direction.Left:
+			vecPos = new Vector3(transform.position.x - width, transform.position.y, transform.position.z);
+			break;
+		case globals.direction.Right:
+			vecPos = new Vector3(transform.position.x + width, transform.position.y, transform.position.z);
+			break;	
+		case globals.direction.Top:
+			vecPos = new Vector3(transform.position.x, transform.position.y + height, transform.position.z);
+			break;
+		case globals.direction.Bottom:
+			vecPos = new Vector3(transform.position.x, transform.position.y - height, transform.position.z);
+			break;	
+		case globals.direction.TopLeft:
+			vecPos = new Vector3(transform.position.x - width, transform.position.y + height, 
+									 transform.position.z);
+	
+			break;
+		case globals.direction.TopRight:
+			vecPos = new Vector3(transform.position.x + width, transform.position.y + height, 
+									 transform.position.z);
+			break;	
+		case globals.direction.BottomLeft:
+			vecPos = new Vector3(transform.position.x - width, transform.position.y - height, 
+									 transform.position.z);
+			break;
+		case globals.direction.BottomRight:
+			vecPos = new Vector3(transform.position.x + width, transform.position.y - height, 
+									 transform.position.z);
+			break;
+		default:
+			vecPos = new Vector3(transform.position.x + width, transform.position.y - height, 
+									 transform.position.z);
+			break;
+		}
+		
+		Collider[] objects = Physics.OverlapSphere(vecPos, (Mathf.Min(width, height) / 3));
+		if (objects.Length == 0)
+			return false;
+		if (objects.Length == 1)
+		{
+			OTSprite sprite = objects[0].GetComponent<OTSprite>();
+			if (sprite.tag.Equals("ground"))
+				return true;
+			else
+				return false;
+		}
+		if (objects.Length == 2)
+		{
+			OTSprite[] sprites = objects[0].GetComponents<OTSprite>();
+			if (sprites[0].tag.Equals("zombie") || sprites[1].tag.Equals("zombie"))
+				return false;
+			else
+				return true;
+		}
+		return true;
+	} // ValidMove
 }

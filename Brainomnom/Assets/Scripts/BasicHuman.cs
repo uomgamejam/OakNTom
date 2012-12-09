@@ -6,6 +6,7 @@ public class BasicHuman: MonoBehaviour {
 	public enum basicHumanType { Still, Agg, Cow }
 	public basicHumanType type;
 	public bool isMoving = false;
+	public bool isActive = false;
 	public enum actionType { None, Turn, Move, Attack }
 	public actionType action = actionType.None;
 	public globals.direction currentDirection = globals.direction.Top;

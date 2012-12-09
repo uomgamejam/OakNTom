@@ -201,7 +201,7 @@
      <Compile Include="Assets\Scripts\BasicHuman.cs" />
      <Compile Include="Assets\Scripts\BasicHumanAnims.cs" />
      <Compile Include="Assets\Scripts\BasicZombie.cs" />
-     <Compile Include="Assets\Scripts\BasicZombieAnim.cs" />
+     <Compile Include="Assets\Scripts\BasicZombieAnims.cs" />
      <Compile Include="Assets\Scripts\globals.cs" />
      <Compile Include="Assets\iTween\Plugins\iTween.cs" />
      <Compile Include="Assets\iTween\Plugins\iTweenHinting.cs" />
