@@ -1,0 +1,193 @@
+-debug
+-target:library
+-nowarn:0169
+-out:Temp/Assembly-CSharp.dll
+-r:"C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll"
+-r:Assets/AstarPathfindingProject/Plugins/DotNetZip/Ionic.Zip.Reduced.dll
+-r:Assets/AstarPathfindingProject/Plugins/JsonFx/JsonFx.Json.dll
+-r:"C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll"
+-define:UNITY_STANDALONE
+-define:ENABLE_MICROPHONE
+-define:ENABLE_IMAGEEFFECTS
+-define:ENABLE_WEBCAM
+-define:ENABLE_AUDIO_FMOD
+-define:ENABLE_NETWORK
+-define:ENABLE_MONO
+-define:ENABLE_PHYSICS
+-define:ENABLE_TERRAIN
+-define:ENABLE_CACHING
+-define:ENABLE_SUBSTANCE
+-define:ENABLE_GENERICS
+-define:ENABLE_CLOTH
+-define:ENABLE_MOVIES
+-define:ENABLE_AUDIO
+-define:ENABLE_WWW
+-define:ENABLE_SHADOWS
+-define:ENABLE_DUCK_TYPING
+-define:UNITY_4_0_0
+-define:UNITY_4_0
+-define:UNITY_STANDALONE_WIN
+-define:ENABLE_PROFILER
+-define:UNITY_EDITOR
+Assets/AstarPathfindingProject/Core/AI/AIPath.cs
+Assets/AstarPathfindingProject/Core/AI/NavmeshController.cs
+Assets/AstarPathfindingProject/Core/AI/Seeker.cs
+Assets/AstarPathfindingProject/Core/AstarData.cs
+Assets/AstarPathfindingProject/Core/AstarMath.cs
+Assets/AstarPathfindingProject/Core/AstarPath.cs
+Assets/AstarPathfindingProject/Core/BinaryHeap.cs
+Assets/AstarPathfindingProject/Core/GraphEditorBase.cs
+Assets/AstarPathfindingProject/Core/GraphLoaderHistory/AstarSerialize.cs
+Assets/AstarPathfindingProject/Core/GraphLoaderHistory/AstarSerializer3_01.cs
+Assets/AstarPathfindingProject/Core/GraphLoaderHistory/AstarSerializer3_04.cs
+Assets/AstarPathfindingProject/Core/GraphLoaderHistory/AstarSerializer3_05.cs
+Assets/AstarPathfindingProject/Core/GraphLoaderHistory/AstarSerializer3_07.cs
+Assets/AstarPathfindingProject/Core/GraphUpdateScene.cs
+Assets/AstarPathfindingProject/Core/GraphUpdateShape.cs
+Assets/AstarPathfindingProject/Core/Int3.cs
+Assets/AstarPathfindingProject/Core/JsonConverters.cs
+Assets/AstarPathfindingProject/Core/JsonSerializer.cs
+Assets/AstarPathfindingProject/Core/MultithreadClasses.cs
+Assets/AstarPathfindingProject/Core/Node.cs
+Assets/AstarPathfindingProject/Core/NodeLink.cs
+Assets/AstarPathfindingProject/Core/astarclasses.cs
+Assets/AstarPathfindingProject/ExampleScenes/ExampleScripts/AIFollow.cs
+Assets/AstarPathfindingProject/ExampleScenes/ExampleScripts/DoorController.cs
+Assets/AstarPathfindingProject/ExampleScenes/ExampleScripts/DynamicGridObstacle.cs
+Assets/AstarPathfindingProject/ExampleScenes/ExampleScripts/MineBotAI.cs
+Assets/AstarPathfindingProject/ExampleScenes/ExampleScripts/ObjectPlacer.cs
+Assets/AstarPathfindingProject/ExampleScenes/ExampleScripts/ShadowAlign.cs
+Assets/AstarPathfindingProject/ExampleScenes/ExampleScripts/TargetMover.cs
+Assets/AstarPathfindingProject/Generators/Base.cs
+Assets/AstarPathfindingProject/Generators/GridGenerator.cs
+Assets/AstarPathfindingProject/Generators/NavMeshGenerator.cs
+Assets/AstarPathfindingProject/Generators/NodeClasses/GridNode.cs
+Assets/AstarPathfindingProject/Generators/NodeClasses/MeshNode.cs
+Assets/AstarPathfindingProject/Generators/PointGenerator.cs
+Assets/AstarPathfindingProject/Generators/Utilities/BBTree.cs
+Assets/AstarPathfindingProject/Generators/Utilities/Huffman.cs
+Assets/AstarPathfindingProject/Generators/Utilities/NavMeshRenderer.cs
+Assets/AstarPathfindingProject/Generators/Utilities/ObjImporter.cs
+Assets/AstarPathfindingProject/Modifiers/AlternativePath.cs
+Assets/AstarPathfindingProject/Modifiers/FunnelModifier.cs
+Assets/AstarPathfindingProject/Modifiers/Modifiers.cs
+Assets/AstarPathfindingProject/Modifiers/RaycastModifier.cs
+Assets/AstarPathfindingProject/Modifiers/SimpleSmoothModifier.cs
+Assets/AstarPathfindingProject/Modifiers/StartEndModifier.cs
+Assets/AstarPathfindingProject/Pathfinders/CleanupPath65K.cs
+Assets/AstarPathfindingProject/Pathfinders/Path.cs
+Assets/AstarPathfindingProject/Utilities/AstarProfiler.cs
+Assets/AstarPathfindingProject/Utilities/Checksum.cs
+Assets/AstarPathfindingProject/Utilities/DotNetReplacements.cs
+Assets/AstarPathfindingProject/Utilities/GraphUpdateUtilities.cs
+Assets/AstarPathfindingProject/Utilities/LockFreeStack.cs
+Assets/AstarPathfindingProject/Utilities/ObjExporter.cs
+Assets/AstarPathfindingProject/Utilities/Parallel.cs
+Assets/AstarPathfindingProject/Utilities/SizeProfiler.cs
+Assets/AstarPathfindingProject/Utilities/UnityReferenceHelper.cs
+Assets/AstarPathfindingProject/changelog.cs
+"Assets/Orthello/Examples/0 - Simple Examples/(Unity Pro) NavMesh Pathfinding/Agent.cs"
+"Assets/Orthello/Examples/0 - Simple Examples/3D integration/App.cs"
+"Assets/Orthello/Examples/0 - Simple Examples/3D integration/Arrow.cs"
+"Assets/Orthello/Examples/0 - Simple Examples/DragTest/DragTest.cs"
+"Assets/Orthello/Examples/0 - Simple Examples/DragTest/DragTestMain.cs"
+"Assets/Orthello/Examples/0 - Simple Examples/Multi Resolution Art/MultiResolution.cs"
+"Assets/Orthello/Examples/0 - Simple Examples/Persistance/PersistentSprite.cs"
+"Assets/Orthello/Examples/0 - Simple Examples/RotateTowards/TestRotateTowards.cs"
+"Assets/Orthello/Examples/0 - Simple Examples/TextSprites/OTTextChalc.cs"
+"Assets/Orthello/Examples/0 - Simple Examples/TextSprites/OTTextImages.cs"
+"Assets/Orthello/Examples/0 - Simple Examples/TextSprites/OTTextPortago.cs"
+"Assets/Orthello/Examples/1 - Paralax scrolling FilledSprite/CExample1.cs"
+"Assets/Orthello/Examples/2 - Moving collidable sprites/CBlock2.cs"
+"Assets/Orthello/Examples/2 - Moving collidable sprites/CExample2.cs"
+"Assets/Orthello/Examples/2 - Moving collidable sprites/CStar2.cs"
+"Assets/Orthello/Examples/3 - Shooting Asteroids/CAsteroid3.cs"
+"Assets/Orthello/Examples/3 - Shooting Asteroids/CBullet3.cs"
+"Assets/Orthello/Examples/3 - Shooting Asteroids/CExample3.cs"
+"Assets/Orthello/Examples/4 - Follow Target View/CExample4.cs"
+"Assets/Orthello/Examples/4 - Follow Target View/CMover4.cs"
+"Assets/Orthello/Examples/5 - Creating At Runtime/CExample5.cs"
+"Assets/Orthello/Examples/6 - Physics/CExample6.cs"
+"Assets/Orthello/Examples/7 - Tweening/CExample7.cs"
+"Assets/Orthello/Examples/7 - Tweening/CStar7_1.cs"
+"Assets/Orthello/Examples/7 - Tweening/CStar7_2.cs"
+"Assets/Orthello/Examples/8 - Prefab-Support/test8.cs"
+"Assets/Orthello/Standard Assets/OT/Animation/OTMovementController.cs"
+"Assets/Orthello/Standard Assets/OT/Graphics/OTView.cs"
+"Assets/Orthello/Standard Assets/OT/Graphics/Sprites/Atlas/OTAtlasData.cs"
+"Assets/Orthello/Standard Assets/OT/Graphics/Sprites/Atlas/OTSpriteAtlas.cs"
+"Assets/Orthello/Standard Assets/OT/Graphics/Sprites/Atlas/OTSpriteAtlasBMFontXml.cs"
+"Assets/Orthello/Standard Assets/OT/Graphics/Sprites/Atlas/OTSpriteAtlasCocos2D.cs"
+"Assets/Orthello/Standard Assets/OT/Graphics/Sprites/Atlas/OTSpriteAtlasCocos2DFnt.cs"
+"Assets/Orthello/Standard Assets/OT/Graphics/Sprites/Atlas/OTSpriteAtlasImport.cs"
+"Assets/Orthello/Standard Assets/OT/Graphics/Sprites/Atlas/OTSpriteAtlasImportText.cs"
+"Assets/Orthello/Standard Assets/OT/Graphics/Sprites/Atlas/OTSpriteAtlasImportXML.cs"
+"Assets/Orthello/Standard Assets/OT/Graphics/Sprites/Atlas/OTSpriteAtlasOGRE.cs"
+"Assets/Orthello/Standard Assets/OT/Graphics/Sprites/Atlas/OTSpriteAtlasSparrow.cs"
+"Assets/Orthello/Standard Assets/OT/Graphics/Sprites/Atlas/OTSpriteAtlasZwoptex.cs"
+"Assets/Orthello/Standard Assets/OT/Graphics/Sprites/OTAnimatingSprite.cs"
+"Assets/Orthello/Standard Assets/OT/Graphics/Sprites/OTAnimatingSpritePassive.cs"
+"Assets/Orthello/Standard Assets/OT/Graphics/Sprites/OTAnimation.cs"
+"Assets/Orthello/Standard Assets/OT/Graphics/Sprites/OTAnimationFrameset.cs"
+"Assets/Orthello/Standard Assets/OT/Graphics/Sprites/OTContainer.cs"
+"Assets/Orthello/Standard Assets/OT/Graphics/Sprites/OTFilledSprite.cs"
+"Assets/Orthello/Standard Assets/OT/Graphics/Sprites/OTGradientSprite.cs"
+"Assets/Orthello/Standard Assets/OT/Graphics/Sprites/OTScale9Sprite.cs"
+"Assets/Orthello/Standard Assets/OT/Graphics/Sprites/OTSprite.cs"
+"Assets/Orthello/Standard Assets/OT/Graphics/Sprites/OTSpriteSheet.cs"
+"Assets/Orthello/Standard Assets/OT/Graphics/Sprites/OTTextSprite.cs"
+"Assets/Orthello/Standard Assets/OT/Tweening/OTEase.cs"
+"Assets/Orthello/Standard Assets/OT/Tweening/OTEaseBackIn.cs"
+"Assets/Orthello/Standard Assets/OT/Tweening/OTEaseBackInOut.cs"
+"Assets/Orthello/Standard Assets/OT/Tweening/OTEaseBackOut.cs"
+"Assets/Orthello/Standard Assets/OT/Tweening/OTEaseBounceIn.cs"
+"Assets/Orthello/Standard Assets/OT/Tweening/OTEaseBounceInOut.cs"
+"Assets/Orthello/Standard Assets/OT/Tweening/OTEaseBounceOut.cs"
+"Assets/Orthello/Standard Assets/OT/Tweening/OTEaseCircIn.cs"
+"Assets/Orthello/Standard Assets/OT/Tweening/OTEaseCircInOut.cs"
+"Assets/Orthello/Standard Assets/OT/Tweening/OTEaseCircOut.cs"
+"Assets/Orthello/Standard Assets/OT/Tweening/OTEaseCubicIn.cs"
+"Assets/Orthello/Standard Assets/OT/Tweening/OTEaseCubicInOut.cs"
+"Assets/Orthello/Standard Assets/OT/Tweening/OTEaseCubicOut.cs"
+"Assets/Orthello/Standard Assets/OT/Tweening/OTEaseElasticIn.cs"
+"Assets/Orthello/Standard Assets/OT/Tweening/OTEaseElasticInOut.cs"
+"Assets/Orthello/Standard Assets/OT/Tweening/OTEaseElasticOut.cs"
+"Assets/Orthello/Standard Assets/OT/Tweening/OTEaseExpoIn.cs"
+"Assets/Orthello/Standard Assets/OT/Tweening/OTEaseExpoInOut.cs"
+"Assets/Orthello/Standard Assets/OT/Tweening/OTEaseExpoOut.cs"
+"Assets/Orthello/Standard Assets/OT/Tweening/OTEaseLinear.cs"
+"Assets/Orthello/Standard Assets/OT/Tweening/OTEaseQuadIn.cs"
+"Assets/Orthello/Standard Assets/OT/Tweening/OTEaseQuadInOut.cs"
+"Assets/Orthello/Standard Assets/OT/Tweening/OTEaseQuadOut.cs"
+"Assets/Orthello/Standard Assets/OT/Tweening/OTEaseQuartIn.cs"
+"Assets/Orthello/Standard Assets/OT/Tweening/OTEaseQuartInOut.cs"
+"Assets/Orthello/Standard Assets/OT/Tweening/OTEaseQuartOut.cs"
+"Assets/Orthello/Standard Assets/OT/Tweening/OTEaseQuintIn.cs"
+"Assets/Orthello/Standard Assets/OT/Tweening/OTEaseQuintInOut.cs"
+"Assets/Orthello/Standard Assets/OT/Tweening/OTEaseQuintOut.cs"
+"Assets/Orthello/Standard Assets/OT/Tweening/OTEaseSineIn.cs"
+"Assets/Orthello/Standard Assets/OT/Tweening/OTEaseSineInOut.cs"
+"Assets/Orthello/Standard Assets/OT/Tweening/OTEaseSineOut.cs"
+"Assets/Orthello/Standard Assets/OT/Tweening/OTEaseStrongIn.cs"
+"Assets/Orthello/Standard Assets/OT/Tweening/OTEaseStrongInOut.cs"
+"Assets/Orthello/Standard Assets/OT/Tweening/OTEaseStrongOut.cs"
+"Assets/Orthello/Standard Assets/OT/Tweening/OTEasing.cs"
+"Assets/Orthello/Standard Assets/OT/Tweening/OTTween.cs"
+"Assets/Orthello/Standard Assets/OT/Tweening/OTTweenController.cs"
+"Assets/Orthello/Standard Assets/OT/_Base/OT.cs"
+"Assets/Orthello/Standard Assets/OT/_Base/OTController.cs"
+"Assets/Orthello/Standard Assets/OT/_Base/OTDevTrace.cs"
+"Assets/Orthello/Standard Assets/OT/_Base/OTMatRef.cs"
+"Assets/Orthello/Standard Assets/OT/_Base/OTObject.cs"
+"Assets/Orthello/Standard Assets/OT/_Base/OTObjectType.cs"
+"Assets/Orthello/Standard Assets/OT/_Base/OTPB.cs"
+"Assets/Orthello/Standard Assets/OT/_Base/OTSounds.cs"
+"Assets/Orthello/Standard Assets/OT/_Base/OTTimeCycle.cs"
+Assets/Scripts/BasicHuman.cs
+Assets/Scripts/BasicHumanAnims.cs
+Assets/Scripts/globals.cs
+Assets/iTween/Plugins/iTween.cs
+Assets/iTween/Plugins/iTweenHinting.cs
+Assets/iTween/Sample/MoveSample.cs
+Assets/iTween/Sample/RotateSample.cs
+Assets/iTween/Sample/SampleInfo.cs

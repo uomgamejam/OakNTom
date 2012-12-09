@@ -9,7 +9,7 @@ public class globals : MonoBehaviour {
 	
 	public enum teams { Zombies = 0, Humans = 1 }
 	public static int teamCount = 2;
-	public static teams teamTurn = 0;
+	public static teams teamTurn = teams.Zombies;
 	
 	public static float tileWidth = 30;
 	public static float tileHeight = 30;
@@ -21,7 +21,7 @@ public class globals : MonoBehaviour {
 	public static float camRatio;
 	
 	public enum team { None, Zombie, Human }
-	public static team activeTeam = None;
+	public static team activeTeam = team.None;
 	public static OTAnimatingSprite activePerson;
 	
 	public enum direction { Left, Right, Up, Down, TopLeft, TopRight, DownLeft, DownRight }
@@ -40,6 +40,6 @@ public class globals : MonoBehaviour {
 	
 	public void EndTurn()
 	{
-		teamTurn = (teamTurn + 1) % teamCount;
+		teamTurn = (teams)(((int)teamTurn + 1) % teamCount);
 	}
 }
